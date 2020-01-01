@@ -1,5 +1,5 @@
 This is a custom version of React rewrited from scratch.
-Experimental purposes.
+Basically, this is a skinny React and without all the optimization.
 Don't use.
 
 
