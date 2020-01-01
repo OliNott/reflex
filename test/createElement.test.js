@@ -30,12 +30,19 @@ test('Create an element without inherited props and with one children should hav
   expect(Reflex.createElement("div", null, { a: 'a' }, { b: 'b' })).toMatchObject(result)
 })
 
-// createElement("div", null, a, b)
-// test('Create an element a text element instead of text', () => {
-//   const result = {
-//       "type": "div",
-//       "props": { "children": [{ a: 'a' }, { b: 'b' }] }
-//     }
+// createElement("div", null, 'Hehe')
+test('Create a text element instead of text', () => {
+  const result = {
+      "type": "div",
+      "props": {
+        "children": [{
+          type: 'TEXT_ELEMENT',
+          props: {
+            nodeValue: "Hehe"
+          }
+        }]
+      }
+    }
 
-//   expect(Reflex.createElement("div", null, 'a')).toMatchObject(result)
-// })
+  expect(Reflex.createElement("div", null, 'Hehe')).toMatchObject(result)
+})
