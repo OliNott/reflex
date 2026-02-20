@@ -3,4 +3,4 @@ Basically, this is a skinny React and without all the optimization.
 Don't use.
 
 
-Doc : https://pomb.us/build-your-own-react/
+Inspired by : https://pomb.us/build-your-own-react/
